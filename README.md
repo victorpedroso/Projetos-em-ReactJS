@@ -1,3 +1,3 @@
 # Sistema de controle de finanças 
 
-## Desenvolvido em ReactJS
+## Sistema desenvolvido em ReactJS
