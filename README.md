@@ -1,6 +1,6 @@
 # Site e blog
 =============================================================
-### Nesse projeto foi desenvolvido um site em ReactJS e também um blog
+### Nesse projeto foi desenvolvido um site com um blog
 
 Para o desenvolvimento foram utilizados as ferramentas
 - Hooks personalizados
