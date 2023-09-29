@@ -1,0 +1,356 @@
+.home {
+    overflow-x: hidden;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url('../assets/images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_mobile {
+    background-image: url('../assets/images/banner_mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    z-index: -4;
+    margin-top: -10px;
+}
+
+.text_banner {
+    width: 300px;
+    height: 100px;
+    background-color: rgba(255, 145, 0, 0.575);
+    position: relative; 
+    top: 50%;
+    margin-left: 30%;
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px; 
+    color: #FFF;
+    z-index: -1;
+}
+
+.text_banner span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.conteudo_banner {
+    margin-top: 20%;
+    margin-left: 35%;
+    width: 60%;
+    height: 35%;
+    background-color: #e1a139a6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.conteudo_banner span {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.conteudo_banner h2 {
+    margin: 45px;
+}
+
+.titulo_banner {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* Slider */
+.slider {
+    z-index: 0;
+    position: relative;
+    margin-top: 80px;
+}
+
+.slider h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: rgb(234, 137, 35);
+    font-weight: 300;
+}
+
+.slider hr {
+    transform: translate(5%);
+    left: 500px;
+    margin-top: 10px;
+    width: 59%;
+}
+
+.customCarousel {
+    position: relative;
+    z-index: 0;
+  }
+.customCarousel img{
+    width: 10px;
+    height: 90vh;
+}
+  
+  .customCarousel .carousel .control-arrow {
+    z-index: 1;
+  }
+  
+
+.custom_legend {
+    color: #FFF; /* Altere a cor conforme desejado */
+    position: relative; /* Altere a posição conforme desejado */
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .diferenciais {
+    width: 100vw;
+    padding: 0 30px;
+  }
+
+/* Diferenciais */
+.box_diferenciais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: -40px;
+}
+
+.diferenciais {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.diferenciais img{
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.diferenciais p {
+    color: #000;
+}
+
+.box_column {
+    display: flex;
+    width: 100vw;
+}
+
+/* Carousel */
+.carousel_slider {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.inner {
+    display: flex;
+}
+
+.item {
+    min-height: 200px;
+    min-width: 400px;
+    padding: 14px;
+}
+.item img {
+    width: 100%;
+    height: 90%;
+    border-radius: 12px;
+    pointer-events: none;
+}
+  
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+}
+
+/* Ciclos */
+
+.title_ciclos {
+    padding-top: 20px;
+    height: 120px;
+}
+.container_ciclos {
+    padding-top: 20px;
+}
+
+.ciclos {
+    padding: 25px;
+}
+
+.ciclos h1 {
+    font-size: 40px;
+    color: rgb(234, 137, 35);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.ciclos hr {
+    width: 55%;
+    margin: 20px;
+    color: rgb(234, 137, 35);
+}
+
+.containerbox_ciclos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.carousel_ciclos {
+    position: relative;
+    display: block; 
+    width: 300px;
+    max-width: 100%;
+    overflow: hidden;
+    height: 400px;
+    max-height: 90vh;
+}
+
+.carousel_ciclos img{
+    width: 90%;
+    height: 90%;
+    max-height: 60vh;
+    margin: 15px;
+    border-radius: 20px;
+    display: block;
+}
+
+.carousel_ciclos img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.box_ciclos:hover {
+    background-color: rgb(167, 86, 0);
+}
+
+.box_ciclos a:hover {
+    font-weight: bold;
+}
+
+/* Imagens de título */
+.img_title {
+    width: 45vw;
+    padding-left: 10%;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        display: none;
+    }
+    .banner_mobile {
+        display: block;
+    }
+    .custom_legend {
+        bottom: 30px;
+    }
+    .slider {
+        z-index: -1;
+    }
+    .ciclos hr {
+        max-width: 70%;
+        margin-left: 10px;
+        background-color: hwb(31 14% 8%);
+        padding: 1px;
+    }
+    .slider hr {
+        max-width: 80%;
+        margin-left: 10px;
+        background-color: rgb(234, 137, 35);
+        padding: 1px;
+        margin-bottom: 20px;
+    }
+    .home {
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .img_title {
+        width: 70vw;
+    }
+    .text_banner {
+        right: 15%;
+        width: 400px;
+        height: 200px;
+    }
+    .text_banner span {
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .text_banner h1 {
+        color: #FFF;
+        font-weight: 600;
+    }
+    .container_ciclos {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 40px;
+    }
+    .carousel_ciclos img{
+        height: 100%;
+        width: auto;
+        margin: 15px;
+        border-radius: 40px;
+    }
+    .box_ciclos {
+        width: 100%;
+        height: 70px;
+    }
+    .containerbox_ciclos {
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100vw;
+    }
+    .box_diferenciais {
+        flex-direction: column;
+        align-items: center;
+    }
+    .diferenciais {
+        padding: 20px;
+    }
+    .box_column {
+        flex-direction: column;
+    }
+}
+
+@media (min-height: 250px) {
+    .slider hr::after {
+      display: block;
+    }
+  }

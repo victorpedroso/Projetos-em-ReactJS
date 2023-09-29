@@ -1,0 +1,322 @@
+.footer {
+    padding-top: 15px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+}
+
+.logo img{
+    display: flex;
+    margin-top: 50px;
+    width: 400px;
+    height: 130px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    flex-basis: 33.33%; 
+}
+
+.coluna p {
+    color: #000;
+}
+
+.coluna_sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    flex-basis: 33.33%; 
+}
+
+.coluna h3 {
+    margin-bottom: 15px;
+}
+
+.coluna_meio {
+    align-self: end;
+    padding-top: 30%;
+}
+
+.linha {
+    width: 100%
+}
+
+.linha a{
+    display: block; 
+    margin-bottom: 10px;
+}
+
+.icones {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+
+.icones a img:hover {
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.redes_sociais {
+    text-align: right;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.informacoes {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.informacoes h3 {
+    margin-bottom: 0;
+}
+
+.politicas {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 83, 132);
+}
+
+.politicas p{
+    padding: 0 10px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.politicas p:hover {
+    color: #000;
+}
+
+.politica_de_privacidade {
+    margin-top: 10px;
+}
+
+.politica_de_privacidade a {
+    color: #0059ff;
+}
+
+.politica_de_privacidade a:hover {
+    color: rgb(234, 137, 35);
+}
+
+.janela_modal_privacidade, .janela_modal_cookies, .janela_modal_definicoes {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000067;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.janela_modal_privacidade.abrir, .janela_modal_cookies.abrir, .janela_modal_definicoes.abrir {
+    display: flex;
+}
+.modal {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #ffffff96;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fechar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.definicoes_privacidade {
+    display: flex;
+    margin-top: 15px;
+}
+
+.btn_salvar {
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 90%;
+    border: 0;
+    background-color: #0084ff;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFF;
+    transition: .2s;
+}
+
+.btn_salvar:hover {
+    color: #000;
+    font-weight: bold;
+    background-color: #0059ff;
+}
+
+.definicoes_privacidade input{
+    margin: 0 10px;
+}
+
+/* Cookies */
+.cookies_msg {
+    width: 80%;
+    background-color: #FFF;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    display: none;
+}
+.cookies_msg.mostrar_cookies {
+    display: block;
+}
+
+.cookies_msg .cookies_txt {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.cookies_msg .cookies_btn {
+    margin-left: 30px;
+}
+
+.cookies_msg .cookies_btn button {
+    background-color: rgb(234, 137, 35);
+    color: #000;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cookies_msg .cookies_btn button:hover {
+    transform: scale(0.9);
+}
+
+.links_uteis p{
+    margin-bottom: 15px;
+}
+
+.links_uteis p a:hover {
+    color: rgb(234, 137, 35);
+    transform: scaleX(1.1);
+}
+
+@media screen and (max-width: 1030px) {
+    .grid {
+        display: block;
+        flex-direction: row;
+    }
+    
+    .footer {
+        height: 450px;
+        z-index: -100;
+    }
+
+    .coluna_meio {
+        align-self: flex-end;
+        padding-top: 0;
+    }
+
+    .politicas {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .politicas p {
+        margin-top: 10px;
+    }
+
+    .janela_modal_privacidade, .janela_modal_cookies, .janela_modal_definicoes {
+        width: 100%!important;
+    }
+
+    .modal {
+        width: 90px;
+    }
+
+    .modal h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .modal p {
+        text-align: justify;
+    }
+    .fechar {
+        top: 20px;
+        right: 20px;
+    }
+
+    .btn_salvar {
+        left: 80%;
+    }
+    .cookies_msg .cookies_txt {
+        text-align: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .cookies_txt .cookies_btn button{
+        margin-top: 20px;
+    }
+
+    .logo img {
+        width: 60vw;
+        height: 10vh;
+    }
+
+    .coluna_sociais {
+        flex-direction: row;
+    }
+
+    .coluna_sociais .icones {
+        margin: 0 20px;
+    }
+
+}

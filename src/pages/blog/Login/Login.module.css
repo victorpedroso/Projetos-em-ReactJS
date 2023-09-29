@@ -1,0 +1,26 @@
+.login {
+    text-align: center;
+    min-height: 100vh;
+    margin-bottom: 100px;
+}
+
+.login p {
+    color: #AAA;
+    margin-bottom: 30px;
+}
+
+.login h1 {
+    margin-top: 20px;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../../assets//images/banners/PropostaPedagogica.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

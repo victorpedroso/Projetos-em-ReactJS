@@ -1,0 +1,246 @@
+.container {
+    display: block;
+    top: 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -2;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/images/banners/EstruturaEscolar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.linha_titulo {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.conteudo {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+}
+
+.conteudo h3 {
+    margin-bottom: 20px;
+}
+
+.conteudo img {
+    margin-top: 30px;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    padding: 0 30px;
+    margin: 30px;
+}
+
+.column p {
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.column p::after {
+    top: 100%;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: rgb(234, 137, 35);
+    position: absolute;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.column p:hover::after {
+    width: 100%;
+}
+
+.column p:hover {
+    font-weight: bold;
+}
+
+.linha_texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha_texto img {
+    width: 30px;
+}
+
+/* Modal window */
+.janela_modal_quadras {
+    width: 150vw;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000067;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.janela_modal_quadras.abrir {
+    display: flex;
+}
+
+.modal {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    height: 800px;
+    background-color: #ffffff96;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fechar {
+    position: absolute;
+    top: 18%;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Carousel  */
+.carousel_slider {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+}
+
+.inner {
+    display: flex;
+}
+
+.item {
+
+    height: 100%;
+    width: 850px;
+    min-height: 200px;
+    min-width: 800px;
+    padding: 30px;
+}
+.item img {
+    width: 100%;
+    height: 90%;
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+/* Modal */
+
+.modal_overlay {
+    background: #ececec;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_content {
+    width: 90%;
+    height: 50%;
+    max-width: 1300px;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal_content img {
+    width: 400px;
+    height: 400px;
+    padding: 50px 10px;
+}
+
+.conteudo_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_modal {
+    padding: 5px;
+    font-size: large;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    bottom: 28%;
+    right: 18%;
+}
+@media screen and (max-width: 1030px) {
+    .container {
+        height: 200vh;
+    }
+    .box {
+        flex-direction: column;
+    }
+    .column {
+        margin: 10px;
+    }
+    .fechar {
+        top: 20%;
+        right: 10px;
+    }
+    .conteudo_modal {
+        flex-direction: column;
+    }
+}

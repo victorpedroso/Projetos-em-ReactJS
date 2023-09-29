@@ -1,0 +1,57 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(234, 138, 35, 0.363); */
+    background-color: #CCC;
+}
+
+.conteudo {
+    margin-top: 300px;
+}
+
+.search {
+    display: flex;
+}
+
+.search_form  {
+    max-width: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 2em;
+}
+
+.search_form input {
+    margin-right: 10px;
+    width: 70%;
+}
+.search_form input::placeholder {
+    color: black;
+}
+
+.noposts {
+    text-align: center;
+}
+
+.noposts p {
+    margin-bottom: 1.5em;
+    color: black;
+}
+
+.noposts a {
+    padding: 10px 25px;
+    color: black;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    max-width: 100%;
+}

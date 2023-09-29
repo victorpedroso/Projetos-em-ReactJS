@@ -1,0 +1,42 @@
+.container {
+    display: block;
+    top: 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -2;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/images/banners/Depoimentos.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_page {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title_page h1 {
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.title_page hr {
+    padding: 2px;
+    background-color: rgb(234, 137, 35);
+    margin-bottom: 20px;
+}

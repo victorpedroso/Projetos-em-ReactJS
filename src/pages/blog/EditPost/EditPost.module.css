@@ -1,0 +1,28 @@
+.container {
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2.2em;
+    margin: 2em 0;
+}
+
+.container p {
+    color: #000;
+    margin-bottom: 2em;
+}
+
+.container img {
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+.banner {
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(234, 138, 35, 0.651);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

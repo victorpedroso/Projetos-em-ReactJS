@@ -1,0 +1,41 @@
+.post {
+    min-height: 100vh;
+    background-color: #CCC;
+    text-align: center;
+}
+
+.conteudo {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conteudo p {
+    color: #000;
+}
+
+.banner {
+    height: 100px;
+    background-color: #CCC;
+}
+
+.conteudo .tags {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo img {
+    width: 600px;
+    margin-bottom: 2em;
+}
+
+
+.tags p {
+    margin-right: 1em;
+}
+
+.tags span {
+    font-weight: bold;
+}

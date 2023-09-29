@@ -1,0 +1,41 @@
+.container {
+    text-align: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: -2;
+    background-color: #CCC;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    background-color: #FFF;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 5% 5%;
+    margin-top: 12%;
+    z-index: 10;
+}
+
+.conteudo p {
+    margin-top: 15px;
+}
+
+.conteudo h3 {
+    margin-top: 15px;
+    color: rgb(234, 137, 35);
+}
+
+
+@media screen and (max-width: 1030px) {
+    .conteudo {
+        margin-top: 30%;
+    }
+}

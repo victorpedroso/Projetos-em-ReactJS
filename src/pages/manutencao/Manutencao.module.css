@@ -1,0 +1,29 @@
+.container {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 40px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudo a {
+    color: rgb(234, 137, 35);
+}
+
+.conteudo p {
+    margin-bottom: 15px;
+}
+
+.conteudo h2 {
+    color: rgb(234, 137, 35);
+    margin-bottom: 20px;
+}
